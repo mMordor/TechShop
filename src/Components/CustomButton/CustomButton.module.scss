@@ -1,0 +1,46 @@
+$blueColor : rgb(0, 123, 238);
+$selectedBlueColor : rgba(0, 123, 238, 0.733);
+.btn1{
+    width: 100%;
+    padding: 0.6rem;
+    background-color: $blueColor;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover{
+        background-color: $selectedBlueColor;
+    }
+}
+
+.btn2{
+    width: 100%;
+    padding: 0.6rem;
+    color: $blueColor;
+    border: 2px solid $blueColor;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover{
+        color: $selectedBlueColor;
+        border: 2px solid $selectedBlueColor;
+    }
+}
+
+.btn3{
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    color: $blueColor;
+    border: 2px solid $blueColor;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        color: $selectedBlueColor;
+        border: 2px solid $selectedBlueColor;
+    }
+}

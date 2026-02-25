@@ -1,0 +1,44 @@
+
+.menuCard{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40%;
+    height: 350px;
+    color: black;
+    @media screen and (max-height : 850px){
+       height: 300px; 
+    }
+    @media screen and (max-width : 600px){
+        height: 170px;
+    }
+    background-color: rgba($color: rgb(253, 253, 253), $alpha: 1);
+        box-shadow: 1px 1px 6px rgba(143, 143, 143, 0.5);
+
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    &:hover{
+        background-color: rgba(127, 178, 255, 0.616);
+        & .thumbnailCard{
+            transform: scale(1.2);
+            overflow: hidden;
+            transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+    }
+    
+}
+
+.titleCard{
+    max-width: 150px;
+    padding: 0.6rem;
+    border: 1px solid black;
+    background-color: rgba($color: azure, $alpha: 0.8);
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    
+}

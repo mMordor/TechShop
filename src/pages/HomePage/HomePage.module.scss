@@ -1,0 +1,16 @@
+.container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 3rem;
+    @media screen and (max-height : 850px){
+        margin-top: 3rem;
+    }
+    @media screen and (max-width : 600px){
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+}

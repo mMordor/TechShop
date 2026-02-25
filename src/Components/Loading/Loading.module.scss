@@ -1,0 +1,18 @@
+.wraper{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 162, 255, 0.568);
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);} 
+    100% {transform: rotate(360deg);} 
+}
+
+.anim{
+    animation-name: spin;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
